@@ -15,31 +15,31 @@ src/
 
 # 🛠️ Stack Tecnológico
 ## Frontend Framework
-React 18.3.1 con TypeScript
-Hooks para gestión de estado (useState)
-JSX para renderizado declarativo
-Componentes funcionales modernos
-Herramientas de Desarrollo
-Vite 5.4.2 - Build tool ultrarrápido
-TypeScript - Tipado estático para mejor DX
-ESLint - Linting y calidad de código
-PostCSS + Autoprefixer - Procesamiento CSS
-Estilos y UI
-Tailwind CSS 3.4.1 - Framework CSS utility-first
-Lucide React - Iconografía moderna y consistente
-CSS personalizado para animaciones avanzadas
-Diseño responsivo con breakpoints móvil-first
-🎯 Componentes Principales
-1. App.tsx - Controlador Principal
+* React 18.3.1 con TypeScript
+* Hooks para gestión de estado (useState)
+* JSX para renderizado declarativo
+* Componentes funcionales modernos
+## Herramientas de Desarrollo
+* Vite 5.4.2 - Build tool ultrarrápido
+* TypeScript - Tipado estático para mejor DX
+* ESLint - Linting y calidad de código
+* PostCSS + Autoprefixer - Procesamiento CSS
+## Estilos y UI
+* Tailwind CSS 3.4.1 - Framework CSS utility-first
+* Lucide React - Iconografía moderna y consistente
+* CSS personalizado para animaciones avanzadas
+* Diseño responsivo con breakpoints móvil-first
+# 🎯 Componentes Principales
+### 1. App.tsx - Controlador Principal
 // Gestión de estado global y routing
 const [currentView, setCurrentView] = useState<ViewState>('home');
 const [selectedField, setSelectedField] = useState<Field | null>(null);
 
 
-Router manual sin librerías externas
-Estado de navegación centralizado
-Transiciones animadas entre vistas
-2. HomePage.tsx - Landing Page
+* Router manual sin librerías externas
+* Estado de navegación centralizado
+* Transiciones animadas entre vistas
+### 2. HomePage.tsx - Landing Page
 // Grid responsivo de campos tecnológicos
 const fields = [
   { id: 'programming', title: 'Programación', icon: Code },
@@ -55,19 +55,18 @@ Iconografía temática por campo
 // Renderizado de nodos con posicionamiento absoluto
 <div style={{ left: `${node.position.x}%`, top: `${node.position.y}%` }}>
 
-
 Posicionamiento absoluto para layout de grafo
 Conexiones SVG entre nodos relacionados
 Expansión dinámica de sub-nodos
-4. NodeDetail.tsx - Modal de Detalles
+### 4. NodeDetail.tsx - Modal de Detalles
 // Modal overlay con información detallada
 <div className="fixed inset-0 bg-black bg-opacity-50">
-
 
 Modal overlay con backdrop blur
 Scroll interno para contenido extenso
 Enlaces externos con target="_blank"
-📊 Gestión de Datos
+
+### 📊 Gestión de Datos
 Estructura de Datos TypeScript
 interface SubNode {
   id: string;
@@ -86,7 +85,8 @@ Datos Estáticos JSON
 +40 sub-especializaciones detalladas
 +200 recursos curados con enlaces reales
 Metadatos de dificultad, tiempo estimado, prerrequisitos
-🎨 Sistema de Diseño
+
+## 🎨 Sistema de Diseño
 Paleta de Colores Temática
 programming: 'from-blue-500 to-purple-600'
 ai: 'from-green-500 to-teal-600'
@@ -94,7 +94,7 @@ cybersecurity: 'from-red-500 to-pink-600'
 cloud: 'from-indigo-500 to-blue-600'
 
 
-Animaciones CSS Personalizadas
+## Animaciones CSS Personalizadas
 @keyframes fadeIn { /* Entrada suave */ }
 @keyframes slideIn { /* Deslizamiento lateral */ }
 @keyframes scaleIn { /* Escalado suave */ }
@@ -117,7 +117,7 @@ const getBreadcrumbs = (): string[] => {
 };
 
 
-🚀 Optimizaciones de Performance
+## 🚀 Optimizaciones de Performance
 Lazy Loading
 Componentes bajo demanda solo cuando se necesitan
 Imágenes optimizadas desde URLs externas (Pexels)
@@ -129,7 +129,8 @@ UX Optimizations
 Transiciones suaves entre estados
 Feedback visual inmediato en interacciones
 Estados de carga implícitos con animaciones
-🎯 Características Técnicas Destacadas
+
+## 🎯 Características Técnicas Destacadas
 TypeScript Strict Mode
 Tipado fuerte en toda la aplicación
 Interfaces bien definidas para datos
@@ -142,5 +143,6 @@ Responsive Design
 Mobile-first approach
 Breakpoints md:, lg: para diferentes pantallas
 Touch-friendly en dispositivos móviles
+
 Esta arquitectura proporciona una base sólida, escalable y mantenible para una aplicación de roadmaps tecnológicos, con excelente experiencia de usuario y performance optimizada.
 
