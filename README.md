@@ -1,10 +1,10 @@
-🏗️ Arquitectura General
-Patrón de Arquitectura: Component-Based SPA
-Single Page Application (SPA) con React
-Arquitectura por componentes modular y reutilizable
-Estado centralizado con React hooks (useState)
-Separación de responsabilidades clara entre UI, datos y lógica
-Estructura de Carpetas
+# 🏗️ Arquitectura General
+## Patrón de Arquitectura: Component-Based SPA
+* Single Page Application (SPA) con React
+* Arquitectura por componentes modular y reutilizable
+* Estado centralizado con React hooks (useState)
+* Separación de responsabilidades clara entre UI, datos y lógica
+# Estructura de Carpetas
 src/
 ├── components/          # Componentes React reutilizables
 ├── data/               # Datos estáticos (roadmaps.ts)
@@ -13,8 +13,8 @@ src/
 └── App.tsx            # Componente principal
 
 
-🛠️ Stack Tecnológico
-Frontend Framework
+# 🛠️ Stack Tecnológico
+## Frontend Framework
 React 18.3.1 con TypeScript
 Hooks para gestión de estado (useState)
 JSX para renderizado declarativo
