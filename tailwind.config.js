@@ -5,33 +5,34 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Dark mode neon colors
-        neon: {
-          blue: '#00D4FF',
-          purple: '#B347FF',
-          pink: '#FF47B3',
-          green: '#47FF85',
-          yellow: '#FFE047',
-          orange: '#FF8547',
-          red: '#FF4747',
-          cyan: '#47FFFF',
+        // Dark mode soft colors with good contrast
+        soft: {
+          blue: '#60A5FA',      // Soft blue
+          purple: '#A78BFA',    // Soft purple
+          pink: '#F472B6',      // Soft pink
+          green: '#4ADE80',     // Soft green
+          yellow: '#FBBF24',    // Soft yellow
+          orange: '#FB923C',    // Soft orange
+          red: '#F87171',       // Soft red
+          cyan: '#22D3EE',      // Soft cyan
+          indigo: '#818CF8',    // Soft indigo
         },
         dark: {
-          bg: '#0A0A0F',
-          surface: '#1A1A2E',
-          card: '#16213E',
-          border: '#2A2A4A',
-          text: '#E5E5E5',
-          muted: '#A0A0B0',
+          bg: '#0F172A',        // Slate-900
+          surface: '#1E293B',   // Slate-800
+          card: '#334155',      // Slate-700
+          border: '#475569',    // Slate-600
+          text: '#F1F5F9',      // Slate-100
+          muted: '#CBD5E1',     // Slate-300
         }
       },
       boxShadow: {
-        'neon-sm': '0 0 10px rgba(0, 212, 255, 0.3)',
-        'neon-md': '0 0 20px rgba(0, 212, 255, 0.4)',
-        'neon-lg': '0 0 30px rgba(0, 212, 255, 0.5)',
-        'neon-purple': '0 0 20px rgba(179, 71, 255, 0.4)',
-        'neon-pink': '0 0 20px rgba(255, 71, 179, 0.4)',
-        'neon-green': '0 0 20px rgba(71, 255, 133, 0.4)',
+        'soft-sm': '0 4px 6px -1px rgba(96, 165, 250, 0.2)',
+        'soft-md': '0 10px 15px -3px rgba(96, 165, 250, 0.3)',
+        'soft-lg': '0 20px 25px -5px rgba(96, 165, 250, 0.4)',
+        'soft-purple': '0 10px 15px -3px rgba(167, 139, 250, 0.3)',
+        'soft-pink': '0 10px 15px -3px rgba(244, 114, 182, 0.3)',
+        'soft-green': '0 10px 15px -3px rgba(74, 222, 128, 0.3)',
       }
     },
   },

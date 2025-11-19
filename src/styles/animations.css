@@ -88,33 +88,33 @@
   }
 }
 
-/* Neon glow animations */
-@keyframes neonGlow {
+/* Soft glow animations */
+@keyframes softGlow {
   0%, 100% {
-    box-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 15px currentColor;
+    box-shadow: 0 4px 6px -1px currentColor, 0 2px 4px -1px currentColor;
   }
   50% {
-    box-shadow: 0 0 10px currentColor, 0 0 20px currentColor, 0 0 30px currentColor;
+    box-shadow: 0 10px 15px -3px currentColor, 0 4px 6px -2px currentColor;
   }
 }
 
-.neon-glow {
-  animation: neonGlow 2s ease-in-out infinite alternate;
+.soft-glow {
+  animation: softGlow 2s ease-in-out infinite alternate;
 }
 
 /* Dark mode specific animations */
-.dark .neon-pulse {
-  animation: neonPulse 3s ease-in-out infinite;
+.dark .soft-pulse {
+  animation: softPulse 3s ease-in-out infinite;
 }
 
-@keyframes neonPulse {
+@keyframes softPulse {
   0%, 100% {
     opacity: 0.8;
-    filter: brightness(1);
+    filter: brightness(1) saturate(1);
   }
   50% {
     opacity: 1;
-    filter: brightness(1.2);
+    filter: brightness(1.1) saturate(1.1);
   }
 }
 
@@ -136,7 +136,7 @@
 }
 
 .dark .interactive-card::before {
-  background: linear-gradient(90deg, transparent, rgba(0, 212, 255, 0.1), transparent);
+  background: linear-gradient(90deg, transparent, rgba(96, 165, 250, 0.1), transparent);
 }
 
 .interactive-card:hover::before {
@@ -148,17 +148,17 @@
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Neon border effect */
-.neon-border {
+/* Soft border effect */
+.soft-border {
   position: relative;
 }
 
-.neon-border::before {
+.soft-border::before {
   content: '';
   position: absolute;
   inset: 0;
   padding: 2px;
-  background: linear-gradient(45deg, #00D4FF, #B347FF, #FF47B3, #47FF85);
+  background: linear-gradient(45deg, #60A5FA, #A78BFA, #F472B6, #4ADE80);
   border-radius: inherit;
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask-composite: exclude;
@@ -166,7 +166,7 @@
   transition: opacity 0.3s ease;
 }
 
-.neon-border:hover::before {
+.soft-border:hover::before {
   opacity: 0.6;
 }
 
@@ -203,7 +203,7 @@
 }
 
 .dark .focus-ring:focus {
-  box-shadow: 0 0 0 2px #00D4FF;
+  box-shadow: 0 0 0 2px #60A5FA;
 }
 
 /* Responsive animations */
@@ -223,6 +223,10 @@
   .neon-glow {
     animation: none; /* Disable intensive animations on mobile */
   }
+  
+  .soft-glow {
+    animation: none; /* Disable intensive animations on mobile */
+  }
 }
 
 /* Accessibility */
@@ -234,7 +238,9 @@
   }
   
   .neon-glow,
-  .neon-pulse {
+  .neon-pulse,
+  .soft-glow,
+  .soft-pulse {
     animation: none !important;
   }
 }

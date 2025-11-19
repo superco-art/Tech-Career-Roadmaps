@@ -36,10 +36,10 @@ const RoadmapView: React.FC<RoadmapViewProps> = ({ field, isDarkMode }) => {
           <div className="flex items-center space-x-4">
             <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${
               isDarkMode 
-                ? field.gradient.includes('neon') ? field.gradient : 'from-neon-blue to-neon-purple'
+                ? field.gradient.includes('soft') ? field.gradient : 'from-soft-blue to-soft-purple'
                 : field.gradient
             } flex items-center justify-center text-white shadow-lg ${
-              isDarkMode ? 'shadow-neon-sm' : ''
+              isDarkMode ? 'shadow-soft-sm' : ''
             }`}>
               <span className="text-2xl font-bold">{field.title[0]}</span>
             </div>
@@ -103,12 +103,12 @@ const RoadmapView: React.FC<RoadmapViewProps> = ({ field, isDarkMode }) => {
                   onClick={() => handleNodeClick(node)}
                   className={`${
                     isDarkMode 
-                      ? 'bg-dark-card border-dark-border hover:border-neon-blue hover:shadow-neon-md' 
+                      ? 'bg-dark-card border-dark-border hover:border-soft-blue hover:shadow-soft-md' 
                       : node.color
                   } rounded-2xl p-6 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl border-2 min-w-[280px] ${
                     selectedNode?.id === node.id 
                       ? isDarkMode 
-                        ? 'ring-4 ring-neon-blue scale-105 shadow-neon-lg' 
+                        ? 'ring-4 ring-soft-blue scale-105 shadow-soft-lg' 
                         : 'ring-4 ring-blue-300 scale-105'
                       : ''
                   }`}
@@ -140,7 +140,7 @@ const RoadmapView: React.FC<RoadmapViewProps> = ({ field, isDarkMode }) => {
                         onClick={() => handleSubNodeClick(subNode)}
                         className={`rounded-xl p-4 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg border ml-8 ${
                           isDarkMode
-                            ? 'bg-dark-surface border-dark-border hover:border-neon-purple hover:shadow-neon-sm'
+                            ? 'bg-dark-surface border-dark-border hover:border-soft-purple hover:shadow-soft-sm'
                             : 'bg-white border-gray-200'
                         }`}
                         style={{

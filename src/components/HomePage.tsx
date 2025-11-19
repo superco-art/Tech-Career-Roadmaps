@@ -16,35 +16,35 @@ const HomePage: React.FC<HomePageProps> = ({ onFieldSelect, isDarkMode, onToggle
       description: 'Domina el desarrollo de software y aplicaciones',
       icon: Code,
       gradient: isDarkMode ? 'from-neon-blue to-neon-purple' : 'from-blue-500 to-purple-600',
-      hoverGradient: isDarkMode ? 'from-neon-blue to-neon-purple' : 'from-blue-600 to-purple-700',
-      shadow: isDarkMode ? 'shadow-neon-md' : 'shadow-xl'
+      hoverGradient: isDarkMode ? 'from-soft-blue to-soft-purple' : 'from-blue-600 to-purple-700',
+      shadow: isDarkMode ? 'shadow-soft-md' : 'shadow-xl'
     },
     {
       id: 'ai',
       title: 'Inteligencia Artificial',
       description: 'Construye sistemas inteligentes y automatizados',
       icon: Brain,
-      gradient: isDarkMode ? 'from-neon-green to-neon-cyan' : 'from-green-500 to-teal-600',
-      hoverGradient: isDarkMode ? 'from-neon-green to-neon-cyan' : 'from-green-600 to-teal-700',
-      shadow: isDarkMode ? 'shadow-neon-green' : 'shadow-xl'
+      gradient: isDarkMode ? 'from-soft-green to-soft-cyan' : 'from-green-500 to-teal-600',
+      hoverGradient: isDarkMode ? 'from-soft-green to-soft-cyan' : 'from-green-600 to-teal-700',
+      shadow: isDarkMode ? 'shadow-soft-green' : 'shadow-xl'
     },
     {
       id: 'cybersecurity',
       title: 'Ciberseguridad',
       description: 'Protege sistemas y datos contra amenazas',
       icon: Shield,
-      gradient: isDarkMode ? 'from-neon-red to-neon-pink' : 'from-red-500 to-pink-600',
-      hoverGradient: isDarkMode ? 'from-neon-red to-neon-pink' : 'from-red-600 to-pink-700',
-      shadow: isDarkMode ? 'shadow-neon-pink' : 'shadow-xl'
+      gradient: isDarkMode ? 'from-soft-red to-soft-pink' : 'from-red-500 to-pink-600',
+      hoverGradient: isDarkMode ? 'from-soft-red to-soft-pink' : 'from-red-600 to-pink-700',
+      shadow: isDarkMode ? 'shadow-soft-pink' : 'shadow-xl'
     },
     {
       id: 'cloud',
       title: 'Cloud Computing',
       description: 'Infraestructura y servicios en la nube',
       icon: Cloud,
-      gradient: isDarkMode ? 'from-neon-purple to-neon-blue' : 'from-indigo-500 to-blue-600',
-      hoverGradient: isDarkMode ? 'from-neon-purple to-neon-blue' : 'from-indigo-600 to-blue-700',
-      shadow: isDarkMode ? 'shadow-neon-purple' : 'shadow-xl'
+      gradient: isDarkMode ? 'from-soft-purple to-soft-indigo' : 'from-indigo-500 to-blue-600',
+      hoverGradient: isDarkMode ? 'from-soft-purple to-soft-indigo' : 'from-indigo-600 to-blue-700',
+      shadow: isDarkMode ? 'shadow-soft-purple' : 'shadow-xl'
     }
   ];
 
